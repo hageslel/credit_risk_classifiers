@@ -9,12 +9,12 @@ technique prior to running analysis.
 ### Oversampling Models
 The two oversampling algorithms used were Random Over Sampling and SMOTE.  Both models were
 fit to linear regression models to gather performance metrics and generate comparison data. 
-The The Random Over Sampling model that was created actually performed pretty well, 
+The Random Over Sampling model that was created performed well, 
 with a balanced accuracy score of 0.83, an average / total recall score of 0.84, an 
 average / total precision score of 0.99, and an average / total F1 score of 0.91.  
 
 The second oversampling technique utilized was the SMOTE technique.  Similarly to the 
-Random Over Sampling model, the SMOTE technique performed pretty well.  As a whole the 
+Random Over Sampling model, the SMOTE technique performed very well.  As a whole the 
 SMOTE model provided arguably the best overall results of all resampling models.  The 
 SMOTE model returned a balance accuracy score of 0.84, recall of 0.87, precision of 0.99, 
 and F1 of 0.92.  One potential downside to oversampling techniques is that artifical data
@@ -24,14 +24,14 @@ potentially skew results.
 ### Undersampling Model
 A Cluster Centroids model was created to perform undersampling.  Similar to the oversampling
 models, the Cluster Centroids model was fit with a linear regression model to provide
-performance metrics.  As a whole, the Cluster Centroids model performed pretty well, 
+performance metrics.  As a whole, the Cluster Centroids model also performed well, 
 but it was not one of the strongest models.  It provided a balanced accuracy score of 
 0.82, recall of 0.76, precision of 0.99, and an F1 score of 0.86.  
 
 ### Combination Sampling
 A SMOTEENN model was created to perform a combination (over and under) sampling model. 
 This model was also fit to a linear regression model to provide performance metrics.  
-The SMOTEENN model was one of the better performing models, with a balanced accuracy 
+The SMOTEENN model was one of the best performing models, with a balanced accuracy 
 score of 0.84, recall of 0.86, precision of 0.99, and an F1 score of 0.92.  A SMOTTEEN 
 model may have some advantages vs. other models, as it leverage both under and over 
 sampling techniques. 
